@@ -1,0 +1,56 @@
+.webApp {
+  padding: 30px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.webApp h2 {
+  flex: 1;
+  letter-spacing: 3px;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.webApp h2 big {
+  color: var(--primary-bg);
+}
+
+.wrapper h3,
+.left__box h3 {
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+.webApp .wrapper {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.left__box h3 {
+  padding: 2px;
+  margin-bottom: 20px;
+}
+
+.left__box .checkbox__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.checkbox__wrapper div {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .webApp {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,135 @@
+.register__container {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 50px;
+  padding: 20px;
+}
+
+.register__container .left {
+  padding: 20px;
+  flex: 1;
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma;
+}
+
+.left h4 {
+  font-size: 25px;
+  padding-top: 10px;
+  font-weight: 200;
+}
+
+.left p {
+  padding-top: 10px;
+  font-style: italic;
+  color: gray;
+}
+
+::marker {
+  color: gray;
+  font-size: 20px;
+}
+.left li {
+  padding: 10px;
+  letter-spacing: 0.3ch;
+  line-height: 1.5rem;
+}
+
+.left p:last-child {
+  color: var(--primary-bg);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: pre-line;
+}
+
+.check {
+  height: 20px;
+  color: gray;
+  width: 20px;
+}
+
+.register__container .right {
+  padding: 20px;
+  flex: 1.5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: url("../../../public/coding-images/code.png");
+  gap: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.right .formItem {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  justify-content: center;
+  /* background-color: blue; */
+}
+
+.form-btn {
+  padding: 14px 20px;
+  font-size: 18px;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  border: none;
+  letter-spacing: 0.3ch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formItem label {
+  font-size: 20px;
+  text-align: right;
+  width: 100%;
+  font-weight: 800;
+  letter-spacing: 0.2ch;
+}
+
+.formItem input {
+  padding: 15px 20px;
+  text-align: center;
+  width: 100%;
+  background: transparent;
+  color: white;
+  letter-spacing: 0.3ch;
+  font-size: 16px;
+  outline: none;
+
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.formItem input:focus {
+  background-color: var(--primary-bg);
+}
+
+@media screen and (max-width: 700px) {
+  .register__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .register__container .right {
+    padding: 30px;
+  }
+
+  .right .formItem {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .formItem label {
+    text-align: initial;
+  }
+}

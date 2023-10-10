@@ -1,0 +1,45 @@
+.homevideo__container {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homevideo__container .homevideo {
+  display: flex;
+  gap: 50px;
+}
+
+.homevideo .left {
+  flex: 1;
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.left h2 {
+  color: gray;
+  font-weight: 300;
+}
+
+.left p {
+  line-height: 1.5rem;
+}
+.homevideo .right {
+  padding: 20px;
+  flex: 2;
+  width: 100%;
+}
+.right .vid {
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .homevideo__container .homevideo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .homevideo .right {
+    max-width: 400px;
+  }
+}

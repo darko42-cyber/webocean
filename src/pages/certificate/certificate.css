@@ -1,0 +1,48 @@
+.certificate {
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+}
+
+.affiliate h3 {
+  font-size: 30px;
+  text-align: center;
+  color: #333;
+}
+
+.affiliate {
+  margin: 0 auto;
+  /* background-color: aqua; */
+
+  max-width: 1400px;
+}
+.affiliate .affiliaters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.affiliaters .single {
+  padding: 20px;
+}
+.single img {
+  height: 200px;
+}
+
+.single p {
+  max-width: 300px;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+.single span {
+  color: var(--primary-bg);
+  font-weight: bold;
+}
+@media screen and (max-width: 576px) {
+  .affiliate .affiliaters {
+    flex-direction: column;
+  }
+}
