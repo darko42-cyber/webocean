@@ -22,7 +22,7 @@ a {
 :root {
   /* --primary-bg: #4d81b3; */
   --primary-bg: rgb(42, 170, 221);
-  --primary-color: rgb(250, 249, 242);
+  --primary-color: rgb(255, 254, 251);
   --button-padding: 10px 20px;
   --spacing: 20px;
   --button-border-r: 10px;

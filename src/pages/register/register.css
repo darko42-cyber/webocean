@@ -57,7 +57,12 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  color: var(--primary-bg);
+  background: url("../../../public/coding-images/Wocean.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
   color: #333;
 
   gap: 20px;
@@ -93,24 +98,21 @@
   width: 100%;
   font-weight: 800;
   letter-spacing: 0.2ch;
+  color: #fff;
 }
 
 .formItem input {
-  padding: 15px 20px;
+  padding: 10px 20px;
   text-align: center;
   width: 100%;
-  /* background: transparent;
-  color: white; */
+  background: transparent;
+  color: white;
   letter-spacing: 0.3ch;
   font-size: 16px;
   outline: none;
 
-  /* border: 1px solid white; */
+  border: 1px solid white;
   border-radius: 5px;
-}
-
-.formItem input:focus {
-  background-color: var(--primary-bg);
 }
 
 @media screen and (max-width: 700px) {
@@ -131,5 +133,6 @@
 
   .formItem label {
     text-align: initial;
+    font-size: 15px;
   }
 }
