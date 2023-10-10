@@ -128,7 +128,7 @@
   }
 
   .formItem label {
-    text-align: right;
+    text-align: left;
     font-size: 15px;
     white-space: nowrap;
   }
