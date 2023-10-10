@@ -57,18 +57,10 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: url("../../../public/coding-images/www2.jpg");
-  background-position: right center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: blue;
-
-  color: #333;
 
   gap: 20px;
 }
 .right h2 {
-  color: white;
 }
 .right .formItem {
   padding: 20px;
@@ -100,7 +92,6 @@
   width: 100%;
   font-weight: 800;
   letter-spacing: 0.2ch;
-  color: #fff;
 }
 
 .formItem input {
@@ -108,12 +99,12 @@
   text-align: center;
   width: 100%;
   background: transparent;
-  color: white;
+
   letter-spacing: 0.3ch;
   font-size: 16px;
   outline: none;
 
-  border: 1px solid white;
+  border: 1px solid #000;
   border-radius: 5px;
 }
 
@@ -125,16 +116,19 @@
   }
 
   .register__container .right {
-    /* padding: 10px; */
+    padding: 10px;
+    width: 100%;
   }
 
   .right .formItem {
-    flex-direction: column;
-    gap: 10px;
+    /* flex-direction: column; */
+    gap: 0 5px;
+
+    padding: 15px;
   }
 
   .formItem label {
-    text-align: initial;
+    text-align: right;
     font-size: 15px;
     white-space: nowrap;
   }
