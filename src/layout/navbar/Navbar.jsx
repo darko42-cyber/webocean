@@ -66,8 +66,10 @@ const Navbar = ({ scroll }) => {
               <li>Info </li>
             </ul>
             <div className='user__options'>
+              <Link to='/register'>
+                <button> Register school </button>
+              </Link>
               <button> I am a student </button>
-              <button> Register school </button>
             </div>
           </div>
         )}

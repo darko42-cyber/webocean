@@ -151,12 +151,8 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 20px 10px;
-    /* background-color: var(--primary-bg); */
-    background: url("../../../public/coding-images/www.jpg");
-    background-position: left left;
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-fit: cover;
+    background-color: var(--primary-bg);
+
     gap: 10px;
     transition: all 0.2s ease-in-out;
     transform-origin: top center;
@@ -197,13 +193,5 @@
     width: 100%;
     gap: 20px;
     flex-direction: column;
-  }
-
-  .dropdown__navlink {
-    color: white;
-  }
-
-  .nav__list li {
-    color: white;
   }
 }
