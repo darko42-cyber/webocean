@@ -16,7 +16,7 @@
 .left h4 {
   font-size: 25px;
   padding-top: 10px;
-  font-weight: 200;
+  font-weight: 500;
 }
 
 .left p {
@@ -57,12 +57,10 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: url("../../../public/coding-images/code.png");
+  color: var(--primary-bg);
+  color: #333;
+
   gap: 20px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
 }
 
 .right .formItem {
@@ -85,6 +83,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--primary-bg);
+  color: white;
 }
 
 .formItem label {
@@ -99,13 +99,13 @@
   padding: 15px 20px;
   text-align: center;
   width: 100%;
-  background: transparent;
-  color: white;
+  /* background: transparent;
+  color: white; */
   letter-spacing: 0.3ch;
   font-size: 16px;
   outline: none;
 
-  border: 1px solid white;
+  /* border: 1px solid white; */
   border-radius: 5px;
 }
 
