@@ -18,8 +18,7 @@
 }
 .homevideo .left h3:first-child::first-letter {
   color: var(--primary-bg);
-  white-space: nowrap;
-  initial-letter: 4;
+  initial-letter: 2;
 }
 
 .homevideo .left .desc {
