@@ -1,5 +1,5 @@
 .container {
-  position: sticky;
+  position: fixed;
   background-color: var(--primary-bg);
   color: var(--primary-color);
   display: flex;
@@ -8,6 +8,7 @@
   padding: 20px;
   cursor: pointer;
   top: 0;
+  width: 100%;
 }
 
 .nav__container {
@@ -143,16 +144,17 @@
     background-color: var(--primary-bg);
   }
   .nav__box {
-    width: 100%;
     max-height: 100vh;
     position: absolute;
-    align-items: flex-start;
     top: 100%;
+    align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px 10px;
     background-color: var(--primary-bg);
 
+    right: 0;
+    left: 0;
     gap: 10px;
     transition: all 0.2s ease-in-out;
     transform-origin: top center;

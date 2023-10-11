@@ -1,0 +1,59 @@
+.curriculum__container {
+  padding: 20px;
+}
+
+.curriculum__container .curriculum {
+  padding: 20px;
+}
+
+.curriculum h2 {
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.curriculum .lessons {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  margin-inline: auto;
+}
+
+.lessons .lesson {
+  background-color: #f5f5f5;
+  padding: 20px;
+  min-width: 200px;
+
+  border: 1px solid var(--primary-bg);
+  outline: 1px solid black;
+  outline-offset: -5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.lesson .lesson__image {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.lesson__image img {
+  width: 100%;
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+@media screen and (max-width: 700px) {
+  .curriculum .lessons {
+    flex-direction: column;
+  }
+}

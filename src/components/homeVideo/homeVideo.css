@@ -13,15 +13,19 @@
 .homevideo .left {
   flex: 1;
   padding: 20px;
+  width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.left h2 {
-  color: gray;
-  font-weight: 300;
+.homevideo .left h3:first-child::first-letter {
+  color: var(--primary-bg);
+  white-space: nowrap;
+  initial-letter: 4;
+  font-weight: 200;
 }
 
-.left p {
+.homevideo .left .desc {
   line-height: 1.5rem;
+  color: #333;
 }
 .homevideo .right {
   padding: 20px;
@@ -37,6 +41,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 0px;
   }
 
   .homevideo .right {

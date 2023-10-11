@@ -14,28 +14,31 @@
 }
 
 .left h3 {
-  font-size: 30px;
-
+  font-size: 25px;
+  color: #333;
   letter-spacing: 0.2ch;
   text-transform: uppercase;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: lighter;
+  margin-bottom: 10px;
 }
 
-.left h3::first-letter {
+.left h3:first-child::first-letter {
   color: var(--primary-bg);
   font-weight: bolder;
-  font-size: 40px;
+  /* font-size: 2rem; */
   line-height: 1.5;
+  initial-letter: 3;
 }
 
 .left h3::selection {
   background: var(--primary-color);
 }
 
-.left p {
+.banner .left .desc {
   letter-spacing: 0.2ch;
   line-height: 1.5;
+  color: #333;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -43,7 +46,7 @@
   padding: 20px;
   position: relative;
   z-index: -1;
-  flex: 2;
+  flex: 1.5;
 }
 
 .right .btn {
@@ -85,23 +88,34 @@
   .banner__container .banner {
     display: flex;
     flex-direction: column;
+    gap: 0px;
   }
 
   .left h3 {
-    font-size: 30px;
+    font-size: 20px;
     white-space: nowrap;
+  }
+
+  .right .btn__box {
+    display: flex;
+    gap: 20px;
+    display: absolute;
+    bottom: 20px;
   }
 
   .right .btn {
     font-size: 15px;
+    padding: 5px 10px;
+    width: 100%;
+    max-width: 120px;
   }
 
   .btn.start {
-    max-width: 150px;
+    max-width: 120px;
     top: 70%;
   }
   .btn.explore {
-    max-width: 150px;
+    max-width: 120px;
     top: 70%;
   }
 }
