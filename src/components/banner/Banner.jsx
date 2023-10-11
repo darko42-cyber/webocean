@@ -7,7 +7,7 @@ const Banner = ({ scroll }) => {
         <div className='left'>
           <div>
             <h3>BEGIN TO PRACTICE</h3>
-            <h3>E CONSISTENT</h3>
+            <h3>BE CONSISTENT</h3>
           </div>
           <p className='desc'>
             Unlock endless possibility and carrier

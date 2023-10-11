@@ -5,7 +5,8 @@ const HomeVideo = () => {
     <div className='homevideo__container'>
       <div className='homevideo'>
         <div className='left'>
-          <h3> Teaching hrough innovation</h3>
+          <h3>Teaching</h3>
+          <h3> Through innovation</h3>
 
           <p className='desc'>
             Equip your students for the digital age. Our
