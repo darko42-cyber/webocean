@@ -25,9 +25,7 @@
 
 .left h3:first-child::first-letter {
   color: var(--primary-bg);
-
   font-size: 3rem;
-  line-height: 1.5;
   initial-letter: 3;
 }
 
