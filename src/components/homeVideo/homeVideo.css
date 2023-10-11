@@ -13,12 +13,18 @@
 .homevideo .left {
   flex: 1;
   padding: 20px;
+
   width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.homevideo .left h3:first-child::first-letter {
+.homevideo .left h3 {
+  max-width: 250px;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+.homevideo .left h3::first-letter {
   color: var(--primary-bg);
-  initial-letter: 2;
+  initial-letter: 3;
 }
 
 .homevideo .left .desc {
