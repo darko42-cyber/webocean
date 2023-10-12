@@ -88,7 +88,6 @@ const Register = () => {
             <label htmlFor=''>Head Name </label>
             <input
               type='text'
-              placeholder='Please enter your name'
               name='head_name'
               onChange={handleUserChange}
               value={user.head_name}
