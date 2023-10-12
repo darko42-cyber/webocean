@@ -113,7 +113,7 @@
   border: var(--button-r);
   letter-spacing: 0.1ch;
   font-weight: 800;
-  font-family: Courier, monospace;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: var(--primary-color);
   color: var(--primary-bg);
   font-size: 18px;
@@ -196,5 +196,13 @@
     width: 100%;
     gap: 20px;
     flex-direction: column;
+  }
+
+  .link {
+    font-size: 12px;
+  }
+  .user__options button {
+    font-size: 12px;
+    padding: 7px 12px;
   }
 }
