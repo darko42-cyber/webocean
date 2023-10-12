@@ -17,6 +17,7 @@ import Footer from "./layout/footer/Footer";
 import HTML from "./pages/webdev/html/HTML";
 import CSSPAGE from "./pages/webdev/css/CSSPage";
 import HTMLPage from "./pages/webdev/html/HTML";
+import JsPAGE from "./pages/webdev/js/JsPage";
 
 const App = () => {
   const [scroll, setScroll] = useState(false);
@@ -63,6 +64,7 @@ const App = () => {
         <Route path='/webapp' element={<WebApp />} />
         <Route path='/webdev/html' element={<HTMLPage />} />
         <Route path='/webdev/css' element={<CSSPAGE />} />
+        <Route path='/webdev/js' element={<JsPAGE />} />
         <Route path='/mobileapp' element={<MobileApp />} />
         <Route path='/ourapps' element={<OurApps />} />
       </Routes>
