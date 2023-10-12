@@ -170,9 +170,15 @@
     gap: 30px;
     width: 100%;
   }
+  .nav__list li {
+    font-size: 13px;
+  }
   .dropdown__item {
     flex-direction: column;
     width: 100%;
+  }
+  .dropdown__navlink {
+    font-size: 13px;
   }
   .dropdown__item .dropdown__menu {
     position: static;
