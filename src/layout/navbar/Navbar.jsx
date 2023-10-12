@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
-import logo from "../../images/webOcean.png";
+
 const Navbar = ({ scroll }) => {
   const [open, setOpen] = useState(false);
 

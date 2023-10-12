@@ -24,9 +24,8 @@
 }
 
 .lessons .lesson {
-  background-color: #f5f5f5;
   padding: 20px;
-  min-width: 200px;
+  width: 200px;
 
   border: 1px solid var(--primary-bg);
   outline: 1px solid black;
@@ -39,7 +38,6 @@
   display: flex;
   justify-content: center;
   height: 100px;
-  background-color: #eee;
   padding: 10px;
   border-radius: 50px;
 }
@@ -51,9 +49,18 @@
 
   object-fit: contain;
 }
+.lesson .lesson__desc {
+  padding: 15px;
+}
+
+.lesson__desc p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 @media screen and (max-width: 700px) {
   .curriculum .lessons {
     flex-direction: column;
+    gap: 30px;
+    padding: 0px;
   }
 }

@@ -13,6 +13,10 @@ import WebApp from "./pages/webapp/WebApp";
 import OurApps from "./pages/ourapps/OurApps";
 import Home from "./pages/home/Home";
 import Register from "./pages/register/Register";
+import Footer from "./layout/footer/Footer";
+import HTML from "./pages/webdev/html/HTML";
+import CSSPAGE from "./pages/webdev/css/CSSPage";
+import HTMLPage from "./pages/webdev/html/HTML";
 
 const App = () => {
   const [scroll, setScroll] = useState(false);
@@ -57,9 +61,12 @@ const App = () => {
           element={<Certificate />}
         />
         <Route path='/webapp' element={<WebApp />} />
+        <Route path='/webdev/html' element={<HTMLPage />} />
+        <Route path='/webdev/css' element={<CSSPAGE />} />
         <Route path='/mobileapp' element={<MobileApp />} />
         <Route path='/ourapps' element={<OurApps />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };

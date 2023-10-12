@@ -1,0 +1,55 @@
+.html {
+  padding: 20px;
+  margin-top: 80px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.html__group {
+  padding: 20px;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.html__group h2 {
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.html__left {
+  padding: 20px;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.html__course {
+  padding: 20px;
+}
+.html__course h3,
+.html__course h4 {
+  color: #333;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.html__course ul {
+  padding-top: 20px;
+}
+
+.html__course ul li {
+  list-style: decimal;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .html__group {
+    padding-top: 10px;
+  }
+  .html__course {
+    padding-top: 10px;
+  }
+  .html__left {
+    gap: 20px;
+  }
+}
