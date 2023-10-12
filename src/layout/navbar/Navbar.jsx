@@ -28,7 +28,14 @@ const Navbar = ({ scroll }) => {
                   <i className='ri-arrow-down-s-line icon'></i>
                 </div>
                 <div className='dropdown__menu'>
-                  <Link to={"/webDev"}>
+                  <Link
+                    to={"/webDev"}
+                    onClick={() => {
+                      if (window.innerWidth < 500) {
+                        setOpen(false);
+                      }
+                    }}
+                  >
                     <li>Web Development</li>
                   </Link>
                   <li>Software Engineering</li>

@@ -27,9 +27,9 @@ const Footer = () => {
           <div className='center__links'>
             <Link> Freelancing </Link>
             <Link> Certificate </Link>
-            <Link> courses </Link>
+            <Link> Courses </Link>
             <Link> Instructors </Link>
-            <Link> Instructors </Link>
+
             <Link> FAQ </Link>
           </div>
         </div>
