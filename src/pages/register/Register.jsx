@@ -14,8 +14,8 @@ const Register = () => {
           in the program{" "}
         </p>
         <li>
-          Webocean coding club aimed at teaching your JHS
-          students computer programming skills.
+          Our goal is to teach JHS students computer
+          programming skills.
         </li>
         <li>
           We will help your students discover more with tech
@@ -38,10 +38,6 @@ const Register = () => {
           in healthy competitions and challenges
         </li>
 
-        <li>
-          There will be individual challenges and school
-          competitions
-        </li>
         <li>
           Students must pay club fee of <i>GHS100</i> to
           participate

@@ -1,0 +1,15 @@
+.founder {
+  padding: 20px;
+  max-width: 1000px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.founder h2 {
+  color: #333;
+}
+
+.founder .founder__group {
+  padding: 20px;
+  display: flex;
+}

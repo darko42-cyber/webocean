@@ -57,7 +57,7 @@ const Navbar = ({ scroll }) => {
                   }
                 }}
               >
-                <li>Instructor</li>
+                <li>Instructors</li>
               </Link>
               <Link
                 to='/certificate'
@@ -69,7 +69,7 @@ const Navbar = ({ scroll }) => {
               >
                 <li>Certificate</li>
               </Link>
-              <li>Info </li>
+              <li>FAQ </li>
             </ul>
             <div className='user__options'>
               <Link

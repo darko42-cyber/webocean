@@ -7,6 +7,7 @@ import Curriculum from "../../components/curriculum/Curriculum";
 import "./home.css";
 import HomeStory from "../../components/homeStory/HomeStory";
 import Speaker from "../../components/speakers/Speaker";
+import Founder from "../../components/founder/Founder";
 
 const Home = ({ scroll }) => {
   let data = {
@@ -26,6 +27,8 @@ const Home = ({ scroll }) => {
       <Curriculum />
       <br />
       <Speaker />
+      <br />
+      <Founder />
     </div>
   );
 };
