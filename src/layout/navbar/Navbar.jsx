@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 
-const Navbar = ({ scroll }) => {
+const Navbar = ({ scroll, auth }) => {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -79,17 +79,26 @@ const Navbar = ({ scroll }) => {
               <li>FAQ </li>
             </ul>
             <div className='user__options'>
-              <Link
-                to='/register'
-                onClick={() => {
-                  if (window.innerWidth < 500) {
-                    setOpen(false);
-                  }
-                }}
-              >
-                <button> Register school </button>
-              </Link>
-              <button> I am a student </button>
+              {auth.school_name ? (
+                <button className='btn-transparent'>
+                  <i className='ri-school-line'></i>
+                  {auth.school_name}{" "}
+                </button>
+              ) : (
+                <>
+                  <Link
+                    to='/register'
+                    onClick={() => {
+                      if (window.innerWidth < 500) {
+                        setOpen(false);
+                      }
+                    }}
+                  >
+                    <button> Register school </button>
+                  </Link>
+                  <button> I am a student </button>
+                </>
+              )}
             </div>
           </div>
         )}
@@ -98,6 +107,14 @@ const Navbar = ({ scroll }) => {
           <span className='user'>
             <i className='ri-user-fill'></i>
           </span>
+          {/* <div className='user__info'>
+            <h3>Hi sam</h3>
+            <ul className='info'>
+              <li>Dashobard</li>
+              <li>news </li>
+              <li>login</li>
+            </ul>
+          </div> */}
         </div>
         {open ? (
           <div

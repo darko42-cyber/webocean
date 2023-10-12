@@ -18,9 +18,26 @@ import HTML from "./pages/webdev/html/HTML";
 import CSSPAGE from "./pages/webdev/css/CSSPage";
 import HTMLPage from "./pages/webdev/html/HTML";
 import JsPAGE from "./pages/webdev/js/JsPage";
+import axiosInstance from "./api/axiosIntance";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   const [scroll, setScroll] = useState(false);
+  const [auth, setAuth] = useState({});
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    (async function register() {
+      try {
+        const res = await axiosInstance.get("/auth/load");
+        setAuth(res.data);
+      } catch (error) {
+        setError(error.response.data);
+      }
+    })();
+  }, []);
+  console.log(auth);
   useEffect(() => {
     function start() {
       setScroll(true);
@@ -41,12 +58,13 @@ const App = () => {
   }, []);
   return (
     <Router>
-      <Navbar scroll={scroll} />
+      <ToastContainer />
+      <Navbar scroll={scroll} auth={auth} />
 
       <Routes>
         <Route
           path='/'
-          element={<Home scroll={scroll} />}
+          element={<Home scroll={scroll} auth={auth} />}
         />
         <Route
           path='/register'

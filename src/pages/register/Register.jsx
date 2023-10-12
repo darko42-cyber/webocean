@@ -1,7 +1,36 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./register.css";
+import { registerUser } from "../../api/registerUser";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 const Register = () => {
   const [isHead, setIsHead] = useState(true);
+  const [message, setMessage] = useState("");
+  const [user, setUser] = useState({
+    school_name: "",
+    head_name: "",
+    email: "",
+    address: "",
+    phone: "",
+    password: "",
+  });
+
+  const navigate = useNavigate();
+
+  const handleUserChange = (e) => {
+    let { name, value } = e.target;
+    setUser({ ...user, [name]: value });
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await registerUser(user);
+      toast.success(res.data, { position: "top-right" });
+      navigate("/");
+      window.location.reload();
+    } catch (error) {}
+  };
+
   return (
     <div className='register__container'>
       <div className='left'>
@@ -54,26 +83,55 @@ const Register = () => {
             ? "REGISTER YOUR SCHOOL"
             : "Become a student"}
         </h2>
-        <form action=''>
+        <form onSubmit={handleSubmit}>
           <div className='formItem'>
             <label htmlFor=''>Head Name </label>
-            <input type='text' />
+            <input
+              type='text'
+              placeholder='Please enter your name'
+              name='head_name'
+              onChange={handleUserChange}
+              value={user.head_name}
+            />
           </div>
           <div className='formItem'>
             <label htmlFor=''>School Name</label>
-            <input type='text' />
+            <input
+              type='text'
+              name='school_name'
+              onChange={handleUserChange}
+            />
           </div>
           <div className='formItem'>
             <label htmlFor=''>School Email</label>
-            <input type='text' />
+            <input
+              type='text'
+              name='email'
+              onChange={handleUserChange}
+            />
           </div>
           <div className='formItem'>
             <label htmlFor=''>School Address</label>
-            <input type='text' />
+            <input
+              type='text'
+              name='address'
+              onChange={handleUserChange}
+            />
+          </div>
+          <div className='formItem'>
+            <label htmlFor=''>Phone NO</label>
+            <input
+              type='text'
+              name='phone'
+              onChange={handleUserChange}
+            />
           </div>
           <div className='formItem'>
             <label htmlFor=''>Password</label>
-            <input type='password' />
+            <input
+              type='password'
+              onChange={handleUserChange}
+            />
           </div>
           <div className='formItem'>
             <button className='form-btn'>Sign Up</button>
