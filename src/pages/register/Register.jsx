@@ -9,8 +9,8 @@ const Register = () => {
         <h4>Terms and Conditions</h4>
         <h4>Dear sir/madam</h4>
         <p>
-          We are highly delighted to have you here and we
-          are looking forward to seeing school participate
+          We are highly delighted to have you, and we are
+          looking forward to seeing your school participate
           in the program{" "}
         </p>
         <li>
@@ -37,10 +37,7 @@ const Register = () => {
           We will connect students from participated schools
           in healthy competitions and challenges
         </li>
-        <li>
-          Overall best code student for the year would be
-          given an award
-        </li>
+
         <li>
           There will be individual challenges and school
           competitions

@@ -1,48 +1,40 @@
 .certificate {
-  margin: 0 auto;
+  margin-top: 80px;
   padding: 20px;
-  width: 100%;
-}
-
-.affiliate h3 {
-  font-size: 30px;
-  text-align: center;
-  color: #333;
 }
 
 .affiliate {
-  margin: 0 auto;
-  /* background-color: aqua; */
-
-  max-width: 1400px;
-}
-.affiliate .affiliaters {
+  padding: 20px;
+  max-width: 1000px;
+  margin-inline: auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 50px;
 }
 
-.affiliaters .single {
-  padding: 20px;
-}
-.single img {
-  height: 200px;
+.affiliate h2 {
+  color: #333;
 }
 
-.single p {
-  max-width: 300px;
-  line-height: 1.7;
-  letter-spacing: 1px;
+.affiliate .affiliate__group {
+  max-width: 100px;
 }
 
-.single span {
+.affiliate__group span {
   color: var(--primary-bg);
-  font-weight: bold;
 }
-@media screen and (max-width: 576px) {
-  .affiliate .affiliaters {
+
+.affiliate__group img {
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .affiliate {
     flex-direction: column;
+  }
+  .affiliate h2 {
+    font-size: 16px;
   }
 }

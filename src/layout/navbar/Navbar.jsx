@@ -41,32 +41,45 @@ const Navbar = ({ scroll }) => {
                   <i className='ri-arrow-down-s-line icon'></i>
                 </div>
                 <div className='dropdown__menu'>
-                  <Link to='/webapp'>
+                  <Link>
                     <li>Web app</li>
                   </Link>
-                  <Link to='/mobileapp'>
+                  <Link>
                     <li>Mobile app</li>
                   </Link>
                 </div>
               </li>
 
               <Link
-                to={"/instructor"}
                 onClick={() => {
-                  if (window.innerWidth < 700) {
+                  if (window.innerWidth < 500) {
                     setOpen(false);
                   }
                 }}
               >
                 <li>Instructor</li>
               </Link>
-              <Link to='/certificate'>
+              <Link
+                to='/certificate'
+                onClick={() => {
+                  if (window.innerWidth < 500) {
+                    setOpen(false);
+                  }
+                }}
+              >
                 <li>Certificate</li>
               </Link>
               <li>Info </li>
             </ul>
             <div className='user__options'>
-              <Link to='/register'>
+              <Link
+                to='/register'
+                onClick={() => {
+                  if (window.innerWidth < 500) {
+                    setOpen(false);
+                  }
+                }}
+              >
                 <button> Register school </button>
               </Link>
               <button> I am a student </button>

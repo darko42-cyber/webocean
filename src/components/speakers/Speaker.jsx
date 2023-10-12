@@ -21,10 +21,9 @@ const Speaker = () => {
               <h4>Created:Microsoft</h4>
               <q>
                 {" "}
-                Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Facilis nisi ipsam ut
-                exercitationem quasi. Dolorem consequuntur
-                nisi adipisci tempore molestiae!{" "}
+                It's not at all important to get it right
+                the first time. It's vitally important to
+                get it right the last time
               </q>
             </div>
           </div>
@@ -37,11 +36,9 @@ const Speaker = () => {
             <div className='card__desc'>
               <h4>Created:Facebook</h4>
               <q>
-                {" "}
-                Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Facilis nisi ipsam ut
-                exercitationem quasi. Dolorem consequuntur
-                nisi adipisci tempore molestiae!{" "}
+                Programs must be written for people to read,
+                and only incidentally for machines to
+                execute
               </q>
             </div>
           </div>
