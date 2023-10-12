@@ -9,7 +9,7 @@ const HTMLPage = () => {
         <div className='html__left'>
           <div className='html__course'>
             <h3>week 1-2</h3>
-            <h4>Module</h4>
+            <h4>Module 1</h4>
             <ul>
               <li>What is HTML?</li>
               <li>History and Evolution of HTML</li>
@@ -38,7 +38,7 @@ const HTMLPage = () => {
           </div>
           <div className='html__course'>
             <h3>week 5-7</h3>
-            <h4>Module 5</h4>
+            <h4>Module 4</h4>
             <ul>
               <li> Unordered Lists </li>
               <li> Ordered Lists </li>
@@ -48,7 +48,7 @@ const HTMLPage = () => {
           </div>
           <div className='html__course'>
             <h3>week 7-8</h3>
-            <h4>Module 6</h4>
+            <h4>Module 5</h4>
             <ul>
               <li> Inserting Images </li>
               <li>Embedding Audio and Video </li>
@@ -59,7 +59,7 @@ const HTMLPage = () => {
           </div>
           <div className='html__course'>
             <h3>week 7-8</h3>
-            <h4>Module 3</h4>
+            <h4>Module 6</h4>
             <ul>
               <li> Creating Hyperlinks </li>
               <li>Linking to webpages </li>
@@ -70,7 +70,7 @@ const HTMLPage = () => {
           </div>
           <div className='html__course'>
             <h3>week 8-10</h3>
-            <h4>Module 3</h4>
+            <h4>Module 7</h4>
             <ul>
               <li>Forms </li>
               <li>Semantic HTML</li>
@@ -79,7 +79,7 @@ const HTMLPage = () => {
           </div>
           <div className='html__course'>
             <h3>week 10</h3>
-            <h4>Module 9</h4>
+            <h4>Module 8</h4>
             <ul>
               <li>Best Practices </li>
               <li>Projects</li>

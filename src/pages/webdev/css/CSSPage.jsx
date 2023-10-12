@@ -9,7 +9,7 @@ const CSSPAGE = () => {
         <div className='css__left'>
           <div className='css__course'>
             <h3>week 1-2</h3>
-            <h4>Module</h4>
+            <h4>Module 1</h4>
             <ul>
               <li>What is css?</li>
               <li>The Role of CSS in Web Dev</li>
@@ -38,7 +38,7 @@ const CSSPAGE = () => {
           </div>
           <div className='css__course'>
             <h3>week 5-7</h3>
-            <h4>Module 5</h4>
+            <h4>Module 4</h4>
             <ul>
               <li> Flexbox and Grid Layout </li>
               <li> CSS Transition and Animation </li>
@@ -46,28 +46,28 @@ const CSSPAGE = () => {
           </div>
           <div className='css__course'>
             <h3>week 7-8</h3>
-            <h4>Module 6</h4>
+            <h4>Module 5</h4>
             <ul>
               <li>Responsive Web Design </li>
             </ul>
           </div>
           <div className='css__course'>
             <h3>week 7-8</h3>
-            <h4>Module 3</h4>
+            <h4>Module 6</h4>
             <ul>
               <li>CSS Best Practices </li>
             </ul>
           </div>
           <div className='css__course'>
             <h3>week 8-10</h3>
-            <h4>Module 3</h4>
+            <h4>Module 7</h4>
             <ul>
               <li>Projects</li>
             </ul>
           </div>
           <div className='css__course'>
             <h3>week 8-10</h3>
-            <h4>Module 3</h4>
+            <h4>Module 8</h4>
             <ul>
               <li>Facebook Clone</li>
               <li>Twitter Clone</li>

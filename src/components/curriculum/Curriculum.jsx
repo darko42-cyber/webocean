@@ -38,13 +38,17 @@ const Curriculum = () => {
             </Link>
           </div>
           <div className='lesson'>
-            <div className='lesson__image'>
-              <img src='/coding-images/js3.png' alt='' />
-            </div>
-            <div className='lesson__desc'>
-              <h3>JS</h3>
-              <p>Vanilla Javascript Programming</p>
-            </div>
+            <Link to='/webdev/js'>
+              <div className='lesson__image'>
+                <img src='/coding-images/js3.png' alt='' />
+              </div>
+            </Link>
+            <Link to='webdev/js'>
+              <div className='lesson__desc'>
+                <h3>JS</h3>
+                <p>Vanilla Javascript Programming</p>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
