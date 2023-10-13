@@ -167,7 +167,7 @@ button.btn-transparent {
 /*? Media smaller screens now
 */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 700px) {
   .nav__container {
     /* justify-content: space-between; */
     background-color: var(--primary-bg);
