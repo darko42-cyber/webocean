@@ -229,7 +229,6 @@ button.btn-transparent {
     padding: 10px;
     width: 100%;
     gap: 20px;
-    flex-direction: column;
   }
 
   .link {
