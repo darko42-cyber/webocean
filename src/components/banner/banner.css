@@ -15,11 +15,10 @@
 
 .left h3 {
   font-size: 25px;
-  /* color: #333; */
+  color: #333;
   letter-spacing: 0.2ch;
   text-transform: uppercase;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: lighter;
 }
 
 .left h3::selection {
