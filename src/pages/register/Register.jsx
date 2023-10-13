@@ -47,17 +47,14 @@ const Register = () => {
           programming skills.
         </li>
         <li>
-          We will help your students discover more with tech
-          and its skills
+          We will help students discover more with tech and
+          its skills
         </li>
         <li>
           This club will only meet ones a week and will last
           for 1-1.5 hours
         </li>
-        <li>
-          For efficient and smooth practical training, each
-          student should have one computer or laptop
-        </li>
+
         <li>
           Annual coding challenges between students of the
           participated schools
