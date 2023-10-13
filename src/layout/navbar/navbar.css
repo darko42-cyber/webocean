@@ -199,14 +199,14 @@ button.btn-transparent {
     width: 100%;
   }
   .nav__list li {
-    font-size: 13px;
+    font-size: 14px;
   }
   .dropdown__item {
     flex-direction: column;
     width: 100%;
   }
   .dropdown__navlink {
-    font-size: 13px;
+    font-size: 14px;
   }
   .dropdown__item .dropdown__menu {
     position: static;
@@ -232,13 +232,13 @@ button.btn-transparent {
   }
 
   .link {
-    font-size: 12px;
+    font-size: 13px;
   }
   .nav__container .user__options {
     align-items: flex-start;
   }
   .user__options button {
-    font-size: 12px;
+    font-size: 13px;
     padding: 7px 12px;
   }
 }
